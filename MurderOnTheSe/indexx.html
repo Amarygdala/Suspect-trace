@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <title>Martello Murder Forensic Support Tool</title>
+    <h1>Martello Murder Forensic Support Tool</h1>
+</head>
+<div id='main'>
+<div id='wrapper'>
+    <form id="form1" class="form"  onsubmit="return false">
+
+        <select name="Name" onchange="setVal()" >
+            <option disabled>Name</option>
+            <option value="Veronica">Veronica</option>
+            <option value="Jason">Jason</option>
+            <option value="Thomas">Thomas</option>
+            <option value="Rob">Rob</option>
+            <option value="Kristina">Kristina</option>
+            <option value="Marc-Andre">Marc-Andre</option>
+            <option value="Dave">Dave</option>
+            <option value="Salina">Salina</option>
+            <option value="Harrison">Harrison</option>
+            <option value="Alok">Alok</option>
+            <option value="Eugene">Eugene</option>
+        </select>
+
+        <select name="DoorOrAccess" onchange="setVal()">
+            <option disabled>Device</option>
+            <option value="door sensor">Door Sensor</option>
+            <option value="access point">Access Point</option>
+        </select>
+
+        <input type="submit" id="submit" value="Enter"onclick="NameDevice()">
+    </form>
+
+    <form id="form2" class="form" onsubmit="return false">
+        <select name="Name" onchange="setVal()" >
+            <option disabled>Name</option>
+            <option value="Veronica">Veronica</option>
+            <option value="Jason">Jason</option>
+            <option value="Thomas">Thomas</option>
+            <option value="Rob">Rob</option>
+            <option value="Kristina">Kristina</option>
+            <option value="Marc-Andre">Marc-Andre</option>
+            <option value="Dave">Dave</option>
+            <option value="Salina">Salina</option>
+            <option value="Harrison">Harrison</option>
+            <option value="Alok">Alok</option>
+            <option value="Eugene">Eugene</option>
+        </select>
+
+        <select name="Room #" onchange="setVal()">
+            <option disabled>Room Numb</option>
+            <option value="110">110</option>
+            <option value="130">130</option>
+            <option value="150">150</option>
+            <option value="151">151</option>
+            <option value="152">152</option>
+            <option value="155">155</option>
+            <option value="156">156</option>
+            <option value="156b">156B</option>
+            <option value="210">210</option>
+            <option value="220">220</option>
+            <option value="231">231</option>
+            <option value="232">232</option>
+            <option value="233">233</option>
+            <option value="235">235</option>
+            <option value="241">241</option>
+            <option value="244">244</option>
+            <option value="248">248</option>
+        </select>
+
+        <input type="submit" value="Enter" onclick="roomNumber()">
+    </form>
+
+    <div id="info"></div>
+</div>
+<div id=wrapper2>
+    <button id="naBtn" onclick="showNa()">Show N/A</button>
+    <button id="MSBtn" onclick="showMS()">Show Motion Sensor</button>
+    <button id="PhBtn" onclick="showPh()">Show Phone</button>
+    <div id="typeinfo"></div>
+</div>
+
+</div>
+
+</body>
+<script src="Murder-on-the-2nd-Floor-Raw-Data.js"></script>
+<script>setVal();</script>
+
+</html>
